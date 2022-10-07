@@ -24,7 +24,7 @@ def Index():
     return render_template("index.html")
 
 @app.route("/action")
-def calcular():
+def calcular(): 
     if  request.method == "POST":
         peso = float(request.form["peso"])
         altura = float(request.form["altura"])
